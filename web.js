@@ -11,7 +11,7 @@ app.use(express.basicAuth(function(user, pass){
 }));
 */
 
-app.use(express.static(__dirname + '/public'));
+//app.use(express.static(__dirname + '/public'));
 app.get('/', function(request, response) {
   response.send(buffer.toString("utf-8"));
 });
